@@ -7,6 +7,8 @@
   <title>rikipafe's blog</title>
   <meta name="author" content="rikipafe">
 
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate"
+        title="rikipafe's blog Atom Feed" />
 
     
 <style type="text/css">
@@ -11809,9 +11811,16 @@ jQuery(document).ready(function($) {
   <h1><a href="/">rikipafe's blog</a></h1>
 </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-atom">Atom</a></li>
 </ul>
 
 
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
 
 <ul class="main-navigation">
     <li><a href="/archives.html">Archives</a></li>
@@ -11915,11 +11924,30 @@ jQuery(document).ready(function($) {
 
 
 
+<section>
+    <a href="http://twitter.com/rikipafe" class="twitter-follow-button" data-show-count="true">Follow @rikipafe</a>
+</section>
 </aside>    </div>
   </div>
   <footer role="contentinfo"><p>
   Copyright &copy; 2013 - rikipafe -
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 </body>
 </html>
