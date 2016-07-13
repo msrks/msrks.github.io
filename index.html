@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Dev Notes by rikipafe</title>
+    <title>Riki&#39;s Dev Notes by rikipafe</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Dev Notes</h1>
-        <p>python, linux, docker, ..</p>
+        <h1>Riki&#39;s Dev Notes</h1>
+        <p>python, linux, docker, deep learning, ..</p>
 
 
         <p class="view"><a href="https://github.com/rikipafe">View My GitHub Profile</a></p>
@@ -24,7 +24,12 @@
       </header>
       <section>
         <h2>
-<a id="python" class="anchor" href="#python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>python</h2>
+<a id="deep-learning" class="anchor" href="#deep-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep Learning</h2>
+
+<p>see <a href="https://rikipafe.github.io/deeplearning/">project page</a></p>
+
+<h2>
+<a id="python" class="anchor" href="#python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python</h2>
 
 <p>os.listdir </p>
 
@@ -37,8 +42,9 @@
 <div class="highlight highlight-source-python"><pre>df <span class="pl-k">=</span> pd.read_csv(<span class="pl-s"><span class="pl-pds">'</span>txt/<span class="pl-pds">'</span></span><span class="pl-k">+</span>f, <span class="pl-v">sep</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span><span class="pl-cce">\t</span><span class="pl-pds">'</span></span>,<span class="pl-v">names</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>delay<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>count<span class="pl-pds">'</span></span>],\
                      <span class="pl-v">thousands</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>,<span class="pl-pds">'</span></span>,<span class="pl-v">dtype</span><span class="pl-k">=</span>{<span class="pl-s"><span class="pl-pds">'</span>delay<span class="pl-pds">'</span></span>:<span class="pl-c1">str</span>, <span class="pl-s"><span class="pl-pds">'</span>count<span class="pl-pds">'</span></span>:<span class="pl-c1">int</span>})</pre></div>
 
-<p>matplotlib: rc
-seaborn: rc</p>
+<p>matplotlib: rc</p>
+
+<p>seaborn: rc</p>
 
 <div class="highlight highlight-source-python"><pre>matplotlib.rc(<span class="pl-s"><span class="pl-pds">'</span>font<span class="pl-pds">'</span></span>, <span class="pl-v">size</span><span class="pl-k">=</span><span class="pl-c1">12</span>)
 matplotlib.rc(<span class="pl-s"><span class="pl-pds">'</span>axes<span class="pl-pds">'</span></span>, <span class="pl-v">labelsize</span><span class="pl-k">=</span><span class="pl-c1">16</span>, <span class="pl-v">titlesize</span><span class="pl-k">=</span><span class="pl-c1">16</span>)
@@ -50,6 +56,13 @@ plt.rc(<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">
 <p>matplotlib: savefig</p>
 
 <div class="highlight highlight-source-python"><pre>fig.savefig(<span class="pl-s"><span class="pl-pds">"</span>hoge.png<span class="pl-pds">"</span></span>)</pre></div>
+
+<h2>
+<a id="docker" class="anchor" href="#docker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Docker</h2>
+
+<p><a href="https://github.com/takezoe/gitbucket-docker">gitbucket</a></p>
+
+<div class="highlight highlight-source-shell"><pre>docker run -d -p 8080:8080 takezoe/gitbucket</pre></div>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
