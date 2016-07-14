@@ -56,11 +56,58 @@ plt.rc(<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">
 <div class="highlight highlight-source-python"><pre>fig.savefig(<span class="pl-s"><span class="pl-pds">"</span>hoge.png<span class="pl-pds">"</span></span>)</pre></div>
 
 <h2>
+<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h2>
+
+<p>ipconfig</p>
+
+<pre><code>$ sudo ifconfig eth0 inet 10.0.0.100 netmask 255.0.0.0 up
+$ sudo route add default gw 10.0.0.1
+</code></pre>
+
+<p>snmp-server: netsnmp</p>
+
+<div class="highlight highlight-source-shell"><pre>$ sudo apt-get install snmp sniped
+$ snmpwalk -v 2c -c public <span class="pl-k">&lt;</span>ip-addr<span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span>mib-dir<span class="pl-k">&gt;</span> </pre></div>
+
+<p>dhcp-server: </p>
+
+<div class="highlight highlight-source-shell"><pre>$ sudo apt-get install isc-dhcp-server
+$ sudo leafpad /etc/dhcp/dhcp.conf
+    <span class="pl-c"># dhcp-relayを動作させるためには自ネットワークと、アドレス付与ネットワークの両方について設定を記述する必要がある</span>
+    subnet 172.16.0.0 netmask 255.255.255.0 {}
+    subnet 192.168.0.0 netmask 255.255.255.0 {
+      range 192.168.0.2 192.168.0.250<span class="pl-k">;</span>
+      option routers 192.168.0.1<span class="pl-k">;</span>
+      option subnet-mask 255.255.255.0
+      <span class="pl-c"># dns setting</span>
+      <span class="pl-c">#</span>
+      <span class="pl-c">#</span>
+    }
+$ sudo leafpad /etc/default/isc-dhcp-server
+    <span class="pl-c"># INTERFACE = "eth0" を追加</span>
+$ sudo touch /var/lib/dhcp/dhcpd.leases
+$ sudo systemctl stop isc-dhcp-server.service
+$ sudo systemctl start isc-dhcp-server.service
+$ sudo systemctl <span class="pl-c1">enable</span> isc-dhcp-server.service</pre></div>
+
+<p>packet-capture: wireshark</p>
+
+<div class="highlight highlight-source-shell"><pre>$ sudo apt-get install wireshark
+$ sudo groupadd wireshark
+$ sudo usermod -a -G wireshark pi
+$ sudo chgrp wireshark /usr/bin/dumpcap
+$ sudo chmod 750 /usr/bin/dumpcap
+$ sudo raspi-config
+$ sudo setcap cap_net_raw.cap_net_admin=eip /usr/bin/dumpcap
+$ sudo chmod 4711 <span class="pl-s"><span class="pl-pds">'</span>which dumpcap<span class="pl-pds">'</span></span>
+$ sudo chmod 4711 /usr/bin/dumpcap</pre></div>
+
+<h2>
 <a id="docker" class="anchor" href="#docker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Docker</h2>
 
 <p><a href="https://github.com/takezoe/gitbucket-docker">gitbucket</a></p>
 
-<div class="highlight highlight-source-shell"><pre>docker run -d -p 8080:8080 takezoe/gitbucket</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ docker run -d -p 8080:8080 takezoe/gitbucket</pre></div>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
