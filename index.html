@@ -114,6 +114,28 @@ $ sudo chmod 4711 /usr/bin/dumpcap</pre></div>
 <p><a href="https://github.com/takezoe/gitbucket-docker">gitbucket</a></p>
 
 <div class="highlight highlight-source-shell"><pre>$ docker run -d -p 8080:8080 takezoe/gitbucket</pre></div>
+
+<hr>
+
+<h2>
+<a id="atom-under-proxy-env" class="anchor" href="#atom-under-proxy-env" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Atom (under proxy env.)</h2>
+
+<p><em>@160506</em>
+Linux</p>
+
+<div class="highlight highlight-source-shell"><pre>apm config <span class="pl-c1">set</span> http-proxy http://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
+apm config <span class="pl-c1">set</span> https-proxy https://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
+apm config <span class="pl-c1">set</span> strict-ssl <span class="pl-c1">false</span>
+<span class="pl-k">export</span> ATOM_NODE_URL=http://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist</pre></div>
+
+<p>Windows</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># 1) $HOME/.atom/下に、.apmrcファイルを作成し、環境変数を追加する</span>
+http-proxy=http://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
+https-proxy=https://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
+strict-ssl=<span class="pl-c1">false</span>
+<span class="pl-c"># 2) 管理者権限でコマンドプロンプトを開き、以下のコマンドを実行する。</span>
+setx ATOM_NODE_URL http://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist /M</pre></div>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
