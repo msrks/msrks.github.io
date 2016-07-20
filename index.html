@@ -33,11 +33,15 @@
 <h2>
 <a id="python" class="anchor" href="#python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python</h2>
 
-<p>os.listdir </p>
+<p>os </p>
 
 <div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> os
 <span class="pl-k">for</span> f <span class="pl-k">in</span> os.listdir(<span class="pl-s"><span class="pl-pds">'</span>txt/<span class="pl-pds">'</span></span>):
-  <span class="pl-c"># do something</span></pre></div>
+  <span class="pl-c"># do something</span>
+
+<span class="pl-k">import</span> os
+<span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(<span class="pl-c1">FOLDER</span>):
+  os.makedirs(<span class="pl-c1">FOLDER</span>)</pre></div>
 
 <p>pandas: thousands</p>
 
