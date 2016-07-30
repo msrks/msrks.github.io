@@ -1,29 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Msrks Dev Notes by msrks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>Msrks Dev Notes by msrks</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="inner">
         <h1>Msrks Dev Notes</h1>
-        <p>python, linux, docker, deep learning, ..</p>
+        <h2>python, linux, docker, deep learning, ..</h2>
+        <a href="https://github.com/msrks" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
 
-
-        <p class="view"><a href="https://github.com/msrks">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h2>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
 <a id="deep-learning" class="anchor" href="#deep-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep Learning</h2>
 
 <p>see <a href="https://msrks.github.io/deeplearning/">project page</a></p>
@@ -31,135 +36,19 @@
 <hr>
 
 <h2>
-<a id="python" class="anchor" href="#python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python</h2>
+<a id="そのた開発メモ" class="anchor" href="#%E3%81%9D%E3%81%AE%E3%81%9F%E9%96%8B%E7%99%BA%E3%83%A1%E3%83%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>そのた開発メモ</h2>
 
-<p>os </p>
+<p>see <a href="http://msrks.readthedocs.io/en/latest/index.html">read the docs page</a></p>
+        </section>
 
-<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> os
-<span class="pl-k">for</span> f <span class="pl-k">in</span> os.listdir(<span class="pl-s"><span class="pl-pds">'</span>txt/<span class="pl-pds">'</span></span>):
-  <span class="pl-c"># do something</span>
+        <aside id="sidebar">
 
-<span class="pl-k">import</span> os
-<span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(<span class="pl-c1">FOLDER</span>):
-  os.makedirs(<span class="pl-c1">FOLDER</span>)</pre></div>
 
-<p>pandas: thousands</p>
-
-<div class="highlight highlight-source-python"><pre>df <span class="pl-k">=</span> pd.read_csv(<span class="pl-s"><span class="pl-pds">'</span>txt/<span class="pl-pds">'</span></span><span class="pl-k">+</span>f, <span class="pl-v">sep</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span><span class="pl-cce">\t</span><span class="pl-pds">'</span></span>,<span class="pl-v">names</span><span class="pl-k">=</span>[<span class="pl-s"><span class="pl-pds">'</span>delay<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>count<span class="pl-pds">'</span></span>],
-                 <span class="pl-v">thousands</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>,<span class="pl-pds">'</span></span>,<span class="pl-v">dtype</span><span class="pl-k">=</span>{<span class="pl-s"><span class="pl-pds">'</span>delay<span class="pl-pds">'</span></span>:<span class="pl-c1">str</span>, <span class="pl-s"><span class="pl-pds">'</span>count<span class="pl-pds">'</span></span>:<span class="pl-c1">int</span>})</pre></div>
-
-<p>matplotlib, seaborn: rc</p>
-
-<div class="highlight highlight-source-python"><pre>matplotlib.rc(<span class="pl-s"><span class="pl-pds">'</span>font<span class="pl-pds">'</span></span>, <span class="pl-v">size</span><span class="pl-k">=</span><span class="pl-c1">12</span>)
-matplotlib.rc(<span class="pl-s"><span class="pl-pds">'</span>axes<span class="pl-pds">'</span></span>, <span class="pl-v">labelsize</span><span class="pl-k">=</span><span class="pl-c1">16</span>, <span class="pl-v">titlesize</span><span class="pl-k">=</span><span class="pl-c1">16</span>)
-matplotlib.rc(<span class="pl-s"><span class="pl-pds">'</span>xtick<span class="pl-pds">'</span></span>, <span class="pl-v">labelsize</span><span class="pl-k">=</span><span class="pl-c1">16</span>)
-matplotlib.rc(<span class="pl-s"><span class="pl-pds">'</span>ytick<span class="pl-pds">'</span></span>, <span class="pl-v">labelsize</span><span class="pl-k">=</span><span class="pl-c1">16</span>)
-plt.rc(<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span>, <span class="pl-v">usetex</span><span class="pl-k">=</span><span class="pl-c1">True</span>)
-<span class="pl-c">#sns.set(font_scale=1.4)</span></pre></div>
-
-<p>matplotlib: savefig</p>
-
-<div class="highlight highlight-source-python"><pre>fig.savefig(<span class="pl-s"><span class="pl-pds">"</span>hoge.png<span class="pl-pds">"</span></span>)</pre></div>
-
-<hr>
-
-<h2>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h2>
-
-<p>ipconfig</p>
-
-<pre><code>$ sudo ifconfig eth0 inet 10.0.0.100 netmask 255.0.0.0 up
-$ sudo route add default gw 10.0.0.1
-</code></pre>
-
-<p>snmp-server: netsnmp</p>
-
-<div class="highlight highlight-source-shell"><pre>$ sudo apt-get install snmp sniped
-$ snmpwalk -v 2c -c public <span class="pl-k">&lt;</span>ip-addr<span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span>mib-dir<span class="pl-k">&gt;</span> </pre></div>
-
-<p>dhcp-server: </p>
-
-<div class="highlight highlight-source-shell"><pre>$ sudo apt-get install isc-dhcp-server
-$ sudo leafpad /etc/dhcp/dhcp.conf
-    <span class="pl-c"># dhcp-relayを動作させるためには自ネットワークと、アドレス付与ネットワークの両方について設定を記述する必要がある</span>
-    subnet 172.16.0.0 netmask 255.255.255.0 {}
-    subnet 192.168.0.0 netmask 255.255.255.0 {
-      range 192.168.0.2 192.168.0.250<span class="pl-k">;</span>
-      option routers 192.168.0.1<span class="pl-k">;</span>
-      option subnet-mask 255.255.255.0
-      <span class="pl-c"># dns setting</span>
-      <span class="pl-c">#</span>
-      <span class="pl-c">#</span>
-    }
-$ sudo leafpad /etc/default/isc-dhcp-server
-    <span class="pl-c"># INTERFACE = "eth0" を追加</span>
-$ sudo touch /var/lib/dhcp/dhcpd.leases
-$ sudo systemctl stop isc-dhcp-server.service
-$ sudo systemctl start isc-dhcp-server.service
-$ sudo systemctl <span class="pl-c1">enable</span> isc-dhcp-server.service</pre></div>
-
-<p>packet-capture: wireshark</p>
-
-<div class="highlight highlight-source-shell"><pre>$ sudo apt-get install wireshark
-$ sudo groupadd wireshark
-$ sudo usermod -a -G wireshark pi
-$ sudo chgrp wireshark /usr/bin/dumpcap
-$ sudo chmod 750 /usr/bin/dumpcap
-$ sudo raspi-config
-$ sudo setcap cap_net_raw.cap_net_admin=eip /usr/bin/dumpcap
-$ sudo chmod 4711 <span class="pl-s"><span class="pl-pds">'</span>which dumpcap<span class="pl-pds">'</span></span>
-$ sudo chmod 4711 /usr/bin/dumpcap</pre></div>
-
-<hr>
-
-<h2>
-<a id="docker" class="anchor" href="#docker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Docker</h2>
-
-<p><a href="https://github.com/takezoe/gitbucket-docker">gitbucket</a></p>
-
-<div class="highlight highlight-source-shell"><pre>$ docker run --name gitbucket-8001 -d -p 8001:8080 takezoe/gitbucket</pre></div>
-
-<p>tensorflow</p>
-
-<div class="highlight highlight-source-shell"><pre>$ docker run --name jupyter-8002 -d -p 8002:8888 gcr.io/tensorflow/tensorflow</pre></div>
-
-<p>caffe</p>
-
-<div class="highlight highlight-source-shell"><pre>$ docker run --name jupyter-8003 -d -t -p 8003:8888 caffe-demo \
-  /usr/local/bin/jupyter notebook --notebook-dir=/opt/caffe/examples/ --ip=0.0.0.0 </pre></div>
-
-<p>caffe-webdemo</p>
-
-<div class="highlight highlight-source-shell"><pre>$ docker run --name webdemo-8004 -d -t -p 8004:5000 caffe-demo \
-  /usr/bin/python /opt/caffe/examples/web_demo/app.py</pre></div>
-
-<hr>
-
-<h2>
-<a id="atom-under-proxy-env" class="anchor" href="#atom-under-proxy-env" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Atom (under proxy env.)</h2>
-
-<p><em>@160506</em>
-Linux</p>
-
-<div class="highlight highlight-source-shell"><pre>apm config <span class="pl-c1">set</span> http-proxy http://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
-apm config <span class="pl-c1">set</span> https-proxy https://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
-apm config <span class="pl-c1">set</span> strict-ssl <span class="pl-c1">false</span>
-<span class="pl-k">export</span> ATOM_NODE_URL=http://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist</pre></div>
-
-<p>Windows</p>
-
-<div class="highlight highlight-source-shell"><pre><span class="pl-c"># 1) $HOME/.atom/下に、.apmrcファイルを作成し、環境変数を追加する</span>
-http-proxy=http://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
-https-proxy=https://<span class="pl-k">&lt;</span>ip<span class="pl-k">&gt;</span>:<span class="pl-k">&lt;</span>port<span class="pl-k">&gt;</span>
-strict-ssl=<span class="pl-c1">false</span>
-<span class="pl-c"># 2) 管理者権限でコマンドプロンプトを開き、以下のコマンドを実行する。</span>
-setx ATOM_NODE_URL http://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist /M</pre></div>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+  
   </body>
 </html>
