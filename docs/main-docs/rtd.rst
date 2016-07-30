@@ -33,4 +33,4 @@ githubにpush::
   $ git commit -m "[add] docs"
   $ git push
 
-[Read the Docs](https://readthedocs.org) に登録して、<project>をimportしてbuild。
+`Read the Docs <https://readthedocs.org>`_に登録して、<project>をimportしてbuild。

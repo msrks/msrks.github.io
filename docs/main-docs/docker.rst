@@ -7,7 +7,7 @@ Docker
 
 初めて導入するとき
 ------------------------
-[gitbucket](https://github.com/takezoe/gitbucket-docker)::
+`gitbucket<https://github.com/takezoe/gitbucket-docker>`_::
 
   $ docker run --name gitbucket-8001 -d -p 8001:8080 takezoe/gitbucket
 
