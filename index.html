@@ -117,7 +117,7 @@ $ sudo chmod 4711 /usr/bin/dumpcap</pre></div>
 
 <p><a href="https://github.com/takezoe/gitbucket-docker">gitbucket</a></p>
 
-<div class="highlight highlight-source-shell"><pre>$ docker run --name gutbucket-8001 -d -p 8001:8080 takezoe/gitbucket</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ docker run --name gitbucket-8001 -d -p 8001:8080 takezoe/gitbucket</pre></div>
 
 <p>tensorflow</p>
 
@@ -125,13 +125,13 @@ $ sudo chmod 4711 /usr/bin/dumpcap</pre></div>
 
 <p>caffe</p>
 
-<div class="highlight highlight-source-shell"><pre>$ docker run --name jupyter-8003 -i -t -p 8003:8888 caffe-demo /bin/bash
-(container)$ jupyter notebook --notebook-dir=/opt/caffe/examples/ --ip=0.0.0.0 </pre></div>
+<div class="highlight highlight-source-shell"><pre>$ docker run --name jupyter-8003 -d -t -p 8003:8888 caffe-demo \
+  /usr/local/bin/jupyter notebook --notebook-dir=/opt/caffe/examples/ --ip=0.0.0.0 </pre></div>
 
 <p>caffe-webdemo</p>
 
-<div class="highlight highlight-source-shell"><pre>$ docker run --name webdemo-8004 -i -t -p 8004:5000 caffe-demo /bin/bash
-(container)$ python /opt/caffe/examples/web_demo/app.py</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ docker run --name webdemo-8004 -d -t -p 8004:5000 caffe-demo \
+  /usr/bin/python /opt/caffe/examples/web_demo/app.py</pre></div>
 
 <hr>
 
