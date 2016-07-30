@@ -1,6 +1,7 @@
 ========================================
 Read the Docs
 ========================================
+.. highlight:: bash
 
 開発手順
 ----------
@@ -22,7 +23,8 @@ docを作る::
 
 conf.pyを修正::
 
-  html_theme = "defalut" に修正
+  # default の綴り間違いに注意・・お恥ずかしい・・
+  html_theme = "defaut" に修正
 
 githubにpush::
 
@@ -31,4 +33,4 @@ githubにpush::
   $ git commit -m "[add] docs"
   $ git push
 
-Read the Docs に登録して、<project>をimportしてbuild。
+[Read the Docs](https://readthedocs.org) に登録して、<project>をimportしてbuild。
