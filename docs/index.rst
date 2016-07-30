@@ -11,4 +11,5 @@
    main-docs/docker
    main-docs/linux
    main-docs/python
+   main-docs/raspberrypi
    main-docs/rtd
