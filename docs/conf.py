@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Msrks's Development Notes documentation build configuration file, created by
-# sphinx-quickstart on Sat Jul 30 19:25:52 2016.
+# Msrks's Dev Notes documentation build configuration file, created by
+# sphinx-quickstart on Sat Jul 30 19:51:29 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Msrks\'s Development Notes'
+project = 'Msrks\'s Dev Notes'
 copyright = '2016, Masahiro Rikiso'
 author = 'Masahiro Rikiso'
 
@@ -67,7 +67,7 @@ release = '1.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'ja'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -81,7 +81,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -134,7 +134,7 @@ html_theme = 'defalut'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'Msrks\'s Development Notes v1.0'
+# html_title = 'Msrks\'s Dev Notes v1.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -234,7 +234,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'MsrkssDevelopmentNotesdoc'
+htmlhelp_basename = 'MsrkssDevNotesdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -260,7 +260,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'MsrkssDevelopmentNotes.tex', 'Msrks\'s Development Notes Documentation',
+    (master_doc, 'MsrkssDevNotes.tex', 'Msrks\'s Dev Notes Documentation',
      'Masahiro Rikiso', 'manual'),
 ]
 
@@ -296,7 +296,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'msrkssdevelopmentnotes', 'Msrks\'s Development Notes Documentation',
+    (master_doc, 'msrkssdevnotes', 'Msrks\'s Dev Notes Documentation',
      [author], 1)
 ]
 
@@ -311,8 +311,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MsrkssDevelopmentNotes', 'Msrks\'s Development Notes Documentation',
-     author, 'MsrkssDevelopmentNotes', 'One line description of project.',
+    (master_doc, 'MsrkssDevNotes', 'Msrks\'s Dev Notes Documentation',
+     author, 'MsrkssDevNotes', 'One line description of project.',
      'Miscellaneous'),
 ]
 
