@@ -117,7 +117,21 @@ $ sudo chmod 4711 /usr/bin/dumpcap</pre></div>
 
 <p><a href="https://github.com/takezoe/gitbucket-docker">gitbucket</a></p>
 
-<div class="highlight highlight-source-shell"><pre>$ docker run -d -p 8080:8080 takezoe/gitbucket</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ docker run --name gutbucket-8001 -d -p 8001:8080 takezoe/gitbucket</pre></div>
+
+<p>tensorflow</p>
+
+<div class="highlight highlight-source-shell"><pre>$ docker run --name jupyter-8002 -d -p 8002:8888 gcr.io/tensorflow/tensorflow</pre></div>
+
+<p>caffe</p>
+
+<div class="highlight highlight-source-shell"><pre>$ docker run --name jupyter-8003 -i -t -p 8003:8888 caffe-demo /bin/bash
+(container)$ jupyter notebook --notebook-dir=/opt/caffe/examples/ --ip=0.0.0.0 </pre></div>
+
+<p>caffe-webdemo</p>
+
+<div class="highlight highlight-source-shell"><pre>$ docker run --name webdemo-8004 -i -t -p 8004:5000 caffe-demo /bin/bash
+(container)$ python /opt/caffe/examples/web_demo/app.py</pre></div>
 
 <hr>
 
