@@ -10,6 +10,7 @@
    main-docs/bootstrap
    main-docs/deeplearning
    main-docs/docker
+   main-docs/javascript
    main-docs/linux
    main-docs/python
    main-docs/raspberrypi

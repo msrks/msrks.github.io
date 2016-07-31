@@ -3,8 +3,6 @@ Bootstrap
 ========================================
 .. highlight:: html
 
-Proxy環境下での設定方法
-
 ひな型
 -----------
 ::
@@ -61,8 +59,8 @@ bodyのひな型
     </div>
     <!-- content -->
     <div class="row" style="padding:60px 0 0 0">
-    <div class="col-md-3" align="center">left</div>
-    <div class="col-md-9" align="center">center</div>
+      <div class="col-md-3" align="center">left</div>
+      <div class="col-md-9" align="center">center</div>
     </div>
     <!-- footer -->
     <hr>
