@@ -3,6 +3,12 @@ Javascript
 ========================================
 .. highlight:: html
 
+D3JS
+-----
+`d3js <http://ja.d3js.node.ws>`_ ::
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
 起動時に何かしたい
 -------------------
 id=classifyfileのdisabled=trueにして、id=imagefileが変わった瞬間にformをsubmitする::

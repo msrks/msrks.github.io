@@ -37,7 +37,7 @@ Bootstrap
 bodyのひな型
 -----------------
 - containerで囲む
-- col-md-X で列分割(rowで囲んでおく)
+- col-md-X で列分割(rowで囲んでおく): ``grid system``
 - header は navbar
 
 例::
@@ -66,3 +66,38 @@ bodyのひな型
     <hr>
     <p>&copy; Masahiro Rikiso</p>
   </div>
+
+その他
+-----------------
+table::
+
+  <table class="table table-striped table-boarderd table-hover">
+    <thead>
+      <tr><th>ID</th><th>Score</th></tr>
+    </thead>
+    <tbody>
+      <tr><tb>python</tb><tb>100</tb></tr>
+    </tbody>
+  </table>
+
+.. note::
+
+  class="table table-striped table-boarderd table-hover"で囲む
+
+form::
+
+  <form>
+    <div class="form-group">
+      <label class="control-label" for="email">Email</label>
+      <input type="text" id="email" class="form-control" placeholder="email">
+    </div>
+    <div class="form-group">
+      <input type="submit" value="submit" class="btn btn-primary">
+    </div>
+  </form>
+
+.. note::
+
+  class="form-group"で囲む。
+  input textは "form-control"、
+  input submitは "btn btn-primary"、

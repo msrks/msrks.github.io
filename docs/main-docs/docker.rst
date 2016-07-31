@@ -25,6 +25,7 @@ Build::
   $ mkdir mydockerbuild
   $ cd mydockerbuild
   $ touch Dockerfile
+  #https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
   $ atom Dockerfile
     .. FROM docker/whalesay:latest
     .. MAINTAINER Masahiro Rikiso <mshrrks@gmail.com>
