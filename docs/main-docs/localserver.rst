@@ -18,7 +18,7 @@ python3(port=8000)::
 python2::
 
   $ wget https://gist.github.com/msrks/18125b9a57e69e0309c8f743c87904d6/raw/ff5a398ce7d828137869f91796446300b64c9941/server2.py
-  $ python SimpleAuthServer.py USER:PASS
+  $ python server2.py USER:PASS
 
 python3::
 
