@@ -82,6 +82,14 @@ caffe-webdemo::
 
   $ docker run --name webdemo-8004 -d -t -p 8004:5000 msrks/caffe-demo \
   /usr/bin/python /opt/caffe/examples/web_demo/app.py
+  
+sphinx-latexpdf::
+
+  $ sudo docker run --name "sphinx" -v=/HOST/doc:/docs \
+  -it higebu/sphinx-latexpdf /bin/bash
+  (docker) # pip install -U sphinx_rtd_theme --proxy=158.202.41.115:8080
+  (docker) # cd docs
+  (docker) # make latexpdfja
 
 ２回目以降
 ------------
