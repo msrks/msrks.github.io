@@ -12,6 +12,7 @@
    main-docs/docker
    main-docs/javascript
    main-docs/linux
+   main-docs/localserver
    main-docs/python
    main-docs/raspberrypi
    main-docs/rtd
