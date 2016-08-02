@@ -9,6 +9,14 @@ D3JS
 
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
+要素の追加・指定::
+
+  select, selectAll
+
+設定、取得::
+
+  text, attr, style, append, remove
+
 起動時に何かしたい
 -------------------
 id=classifyfileのdisabled=trueにして、id=imagefileが変わった瞬間にformをsubmitする::
