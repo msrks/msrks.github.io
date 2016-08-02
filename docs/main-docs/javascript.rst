@@ -5,11 +5,11 @@ Javascript
 
 D3JS
 -----
-`d3js <http://ja.d3js.node.ws>`_ ::
+`d3js <http://ja.d3js.node.ws>`_ の読み込み::
 
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-要素の追加・指定::
+DOM要素の追加・指定::
 
   select, selectAll
 
