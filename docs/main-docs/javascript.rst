@@ -48,9 +48,16 @@ svgの例::
 
 animation::
 
-  transition, delay, duration, ease
+  transition, delay, duration, ease,
+  each("start",function(){}), each("end",function(){})
 
+event::
 
+  on("mouseover", function(){})
+  on("mouseout", function(){})
+  on("mousedown", function(){})
+  on("mouseup", function(){})
+  on("click", function(){})
 
 起動時に何かしたい
 -------------------
