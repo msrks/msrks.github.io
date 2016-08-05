@@ -17,6 +17,41 @@ DOM要素の追加・指定::
 
   text, attr, style, append, remove
 
+データの利用::
+
+  data, enter, exit
+
+データ利用の例::
+
+  <body>
+    <p>1</p>
+    <p>2</p>
+  <script>
+    var dataset = [1,2,3]
+    var p = d3.select("body").selectAll("p")
+    var update = p.data(dataset)
+    var enter = update.enter().append(p)
+    //var exit　= update.exit()
+  </script>
+  </body>
+
+svgの例::
+
+  <body>
+  <script>
+    var dataset = [1,2,3,4,5]
+    var svg = d3.select("body").append("svg")
+                .attr("width", 500)
+                .attr("height", 200);
+  </script>
+  </body>
+
+animation::
+
+  transition, delay, duration, ease
+
+
+
 起動時に何かしたい
 -------------------
 id=classifyfileのdisabled=trueにして、id=imagefileが変わった瞬間にformをsubmitする::

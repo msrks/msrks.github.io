@@ -24,7 +24,7 @@ docを作る::
 conf.pyを修正::
 
   # default の綴り間違いに注意・・お恥ずかしい・・
-  html_theme = "defaut" に修正
+  html_theme = "default" に修正
 
 githubにpush::
 
