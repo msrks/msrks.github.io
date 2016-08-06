@@ -5,14 +5,26 @@
 
 .. toctree::
    :maxdepth: 1
+   :caption: Scientific Computing
 
-   main-docs/atom
-   main-docs/bootstrap
-   main-docs/deeplearning
-   main-docs/docker
-   main-docs/javascript
-   main-docs/linux
-   main-docs/localserver
-   main-docs/python
-   main-docs/raspberrypi
-   main-docs/rtd
+   scicom/deeplearning
+   scicom/python
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Web Development
+
+   webdev/bootstrap
+   webdev/d3js
+   webdev/jquery
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Environment Setting
+
+   envset/atom
+   envset/docker
+   envset/linux
+   envset/localserver
+   envset/raspberrypi
+   envset/rtd
