@@ -12,6 +12,14 @@
 
 .. toctree::
    :maxdepth: 1
+   :caption: DevOps
+
+   devops/docker
+   devops/heroku
+   devops/vagrant
+
+.. toctree::
+   :maxdepth: 1
    :caption: Web Development
 
    webdev/bootstrap
@@ -23,7 +31,6 @@
    :caption: Environment Setting
 
    envset/atom
-   envset/docker
    envset/linux
    envset/localserver
    envset/raspberrypi
