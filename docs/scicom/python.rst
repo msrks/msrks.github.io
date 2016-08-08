@@ -1,9 +1,18 @@
 ========================================
 Python
 ========================================
-.. highlight:: python
+.. highlight:: bash
 
 Python開発メモ
+
+pyenv
+--------
+upgrade::
+
+  $ brew update
+  $ brew upgrade pyenv
+
+.. highlight:: python
 
 標準ライブラリ
 ------------------------
