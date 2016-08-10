@@ -5,10 +5,11 @@
 
 .. toctree::
    :maxdepth: 1
-   :caption: Scientific Computing
+   :caption: Scientific Python
 
-   scicom/deeplearning
-   scicom/python
+   scipy/deeplearning
+   scipy/mosaik
+   scipy/python
 
 .. toctree::
    :maxdepth: 1
