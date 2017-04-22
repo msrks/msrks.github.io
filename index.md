@@ -1,4 +1,12 @@
-開発メモ[read the docs page](http://msrks.readthedocs.io/en/latest/index.html)
+## 興味順に
+
+1. 機械学習（python使って
+2. フルスタックweb開発（python使って [開発メモ](http://msrks.readthedocs.io/en/latest/index.html)
+3. ネットワーク技術
+4. 組み込み開発
+5. 光通信工学
+6. 制御工学
+7. 物理工学
 
 ## 購入書籍リストメモ
 
