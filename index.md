@@ -8,6 +8,25 @@
 6. 制御工学
 7. 物理工学
 
+---
+
+## Completed Courses of MOOC
+
+### Cousera
+
+* Machine Learning by Andrew Ng
+
+### Udacity
+
+* Deep Learning
+* HTTP & Web Servers
+* Configuring Linux Web Servers
+* Intro to jQuery
+* Intro to AJAX
+* Full Stack Foundation
+
+---
+
 ## 購入書籍リストメモ
 
 基礎体力づくり。7-8割くらいは読んでる。
