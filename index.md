@@ -24,6 +24,8 @@
 * Intro to jQuery
 * Intro to AJAX
 * Full Stack Foundation
+* Designing RESTful APIs (other than chap4)
+* Authentication & Authorization: OAuth (only chap1)
 
 ---
 
