@@ -21,6 +21,7 @@
 * Deep Learning
 * HTTP & Web Servers
 * Configuring Linux Web Servers
+* JavaScript Basics
 * Intro to jQuery
 * Intro to AJAX
 * Full Stack Foundation
