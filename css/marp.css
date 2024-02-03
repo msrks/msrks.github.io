@@ -1,0 +1,53 @@
+/* @theme furukawa */
+
+@import "default";
+@import url("https://unpkg.com/tailwindcss@^2/dist/utilities.min.css");
+
+/* TITLE PAGE */
+
+section.titlepage {
+  color: white;
+  background-image: url("https://gist.githubusercontent.com/msrks/4a155504ec9fdf06edcc0d7afe28c7ee/raw/858ac55df861385cdea3e6009eda27a8eea33087/1.png");
+  background-size: cover;
+}
+
+section.titlepage h1 {
+  color: white;
+}
+
+/* NORMAL PAGE */
+
+section {
+  background-image: url("https://gist.githubusercontent.com/msrks/4a155504ec9fdf06edcc0d7afe28c7ee/raw/858ac55df861385cdea3e6009eda27a8eea33087/2.png");
+  background-size: cover;
+  color: black;
+}
+
+/* ALL PAGE */
+
+section::after {
+  font-size: 20px;
+  transform: translateY(20px);
+}
+
+footer {
+  font-size: 12px;
+  color: black;
+  transform: translateY(14px) translateX(-16px);
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-size: 16px;
+  position: absolute;
+  bottom: 35px;
+  padding-left: 10px;
+}
+
+table {
+  margin: 0 auto;
+}
