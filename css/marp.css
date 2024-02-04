@@ -11,8 +11,13 @@ section.titlepage {
   background-size: cover;
 }
 
-section.titlepage h1 {
+section.titlepage h1,
+section.titlepage a {
   color: white;
+}
+
+section.titlepage:after {
+  display: none;
 }
 
 /* NORMAL PAGE */
@@ -27,6 +32,7 @@ section {
 
 section::after {
   font-size: 20px;
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
   transform: translateY(20px);
 }
 
